@@ -1,11 +1,19 @@
 {
   "name": "locationweatherapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Get Locations Weather and time",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
-  "author": "",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/request-promise-native": "^1.0.15"
+  },
+  "author": "Kingsley EKoh-Ordan",
   "license": "ISC"
 }
