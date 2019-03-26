@@ -1,3 +1,4 @@
 {
-    "DUMMY_CONFIG":"1234"
+    "WEATHER_API_SECRET":"23097f3502cdc299bbd5c7b06a46a8c4",
+    "WEATHER_API_BASE_URL":"http://api.openweathermap.org/data/2.5/weather"
 }
