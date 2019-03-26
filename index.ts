@@ -7,9 +7,9 @@ for(let i = 0; i < locations.length; i++){
     })
 }
 
-const displayWeather =  (weatherResponse) => {
-    let response = JSON.parse(weatherResponse)
-    if(response.cod == 200){
+const displayWeather =  (weatherResponse) => {    
+    if(weatherResponse["cod"] != 400){
+        let response = JSON.parse(weatherResponse)    
         console.log("The weather report for  " + response.name)
         const report = {
             main : response.weather[0].main,
@@ -18,5 +18,8 @@ const displayWeather =  (weatherResponse) => {
             wind: response.wind.speed
         }
         console.log(report)     
+    }
+    else{
+        console.log(weatherResponse)
     }
 }

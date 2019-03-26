@@ -12,11 +12,15 @@ const config_1 = require("./config");
 const request = require("request-promise-native");
 const baseUrl = config_1.default["WEATHER_API_BASE_URL"];
 const apiSecret = config_1.default["WEATHER_API_SECRET"];
-let queryString = "?q=London,uk&APPID=" + apiSecret;
 let getWeather = (location, postalCode) => __awaiter(this, void 0, void 0, function* () {
     const query = "?q=" + location + "&APPID=" + apiSecret;
-    let result = yield request.get(baseUrl + query);
-    return result;
+    try {
+        let result = yield request.get(baseUrl + query);
+        return result;
+    }
+    catch (err) {
+        return { "cod": "400", "error": err.message };
+    }
 });
 exports.default = getWeather;
 //# sourceMappingURL=weather.js.map
