@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.7"
+    "request-promise-native": "^1.0.7",
+    "typescript": "^3.3.4000"
   },
   "devDependencies": {
     "@types/request-promise-native": "^1.0.15"
