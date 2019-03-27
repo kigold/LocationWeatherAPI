@@ -37,6 +37,7 @@ tests/cases/**/*.js
 tests/cases/**/*.js.map
 *.config
 *.js.map
+src/*.js.map
 scripts/debug.bat
 scripts/run.bat
 scripts/word2md.js
